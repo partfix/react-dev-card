@@ -104,7 +104,7 @@ function Intro({ name, intro }) {
     if (adds < 3) {
       adder(adds + 1)
     } else {
-      adder(0)
+      adder(0) // loop
     }
   }
 
@@ -124,7 +124,6 @@ function SkillList() {
   const deferChecker = skillsArr;
   const defer = deferChecker.length;
 
-
   return (
     <div className='skill-list' >
       {defer ? (skillsArr.map((def) => <Skill skill={def.skill} color={def.color} levels={def.level} txtColor={def.textColor} key={def.skill} />)) : <PopMessage />}
@@ -133,6 +132,7 @@ function SkillList() {
     </div>
   )
 }
+
 
 function Skill({ skill, color, levels, txtColor }) {
 
