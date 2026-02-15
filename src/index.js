@@ -122,7 +122,7 @@ function Intro({ name, intro }) {
 
 function SkillList() {
   const deferChecker = skillsArr;
-  const defer = deferChecker.length;
+  const defer = deferChecker.length; // check the skill array's lengt.
 
   return (
     <div className='skill-list' >
