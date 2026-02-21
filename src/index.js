@@ -128,7 +128,7 @@ function SkillList() {
     <div className='skill-list' >
       {defer ? (skillsArr.map((def) => <Skill skill={def.skill} color={def.color} levels={def.level} txtColor={def.textColor} key={def.skill} />)) : <PopMessage />}
       {/*we check if the var defer true or false*/}
-      {/*then we check the sample data {skillsArr}*/}
+      {/*then we check the sample data*/}
     </div>
   )
 }
@@ -151,5 +151,6 @@ function PopMessage() {
     <span>You don't have data!</span>
   )
 }
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<React.StrictMode><App /></React.StrictMode>)
