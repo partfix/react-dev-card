@@ -81,8 +81,6 @@ function App() {
         <SkillList />
       </div>
     </div>
-
-
   );
 }
 
@@ -120,6 +118,7 @@ function Intro({ name, intro }) {
   )
 }
 
+
 function SkillList() {
   const deferChecker = skillsArr;
   const defer = deferChecker.length;
@@ -128,7 +127,6 @@ function SkillList() {
     <div className='skill-list' >
       {defer ? (skillsArr.map((def) => <Skill skill={def.skill} color={def.color} levels={def.level} txtColor={def.textColor} key={def.skill} />)) : <PopMessage />}
       {/*we check if the var defer true or false*/}
-      {/*then we check the sample data*/}
     </div>
   )
 }
